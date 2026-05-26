@@ -1,0 +1,9 @@
+Architecture: amd64
+Description: Adapter pattern implementation for Monster to Pet
+Maintainer: Someone <sirlovaolga@gmail.com>
+Package: monster-pet-adapter
+Priority: optional
+Section: devel
+Version: 0.1.0.0
+Installed-Size: 4411
+
