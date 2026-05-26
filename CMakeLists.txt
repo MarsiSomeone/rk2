@@ -24,7 +24,7 @@ target_include_directories(monster_pet PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 if(BUILD_TESTS)
     enable_testing()
-    add_executable(a_test tests/test.cpp)
+    add_executable(a_test tests/a_test.cpp)
     target_link_libraries(a_test gtest_main)
     target_include_directories(a_test PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
     add_test(NAME Test COMMAND a_test)

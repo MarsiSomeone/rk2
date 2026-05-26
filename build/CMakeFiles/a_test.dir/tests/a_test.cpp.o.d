@@ -1,5 +1,5 @@
-CMakeFiles/a_test.dir/tests/test.cpp.o: \
- /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/test.cpp \
+CMakeFiles/a_test.dir/tests/a_test.cpp.o: \
+ /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/a_test.cpp \
  /usr/include/stdc-predef.h \
  /home/marsi/MarsiSomeone/tasks/rk2/Adapter/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  /usr/include/c++/13/cstddef \

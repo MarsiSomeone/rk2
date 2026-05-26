@@ -69,28 +69,28 @@ include CMakeFiles/a_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/a_test.dir/flags.make
 
-CMakeFiles/a_test.dir/tests/test.cpp.o: CMakeFiles/a_test.dir/flags.make
-CMakeFiles/a_test.dir/tests/test.cpp.o: /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/test.cpp
-CMakeFiles/a_test.dir/tests/test.cpp.o: CMakeFiles/a_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marsi/MarsiSomeone/tasks/rk2/Adapter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/a_test.dir/tests/test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a_test.dir/tests/test.cpp.o -MF CMakeFiles/a_test.dir/tests/test.cpp.o.d -o CMakeFiles/a_test.dir/tests/test.cpp.o -c /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/test.cpp
+CMakeFiles/a_test.dir/tests/a_test.cpp.o: CMakeFiles/a_test.dir/flags.make
+CMakeFiles/a_test.dir/tests/a_test.cpp.o: /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/a_test.cpp
+CMakeFiles/a_test.dir/tests/a_test.cpp.o: CMakeFiles/a_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/marsi/MarsiSomeone/tasks/rk2/Adapter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/a_test.dir/tests/a_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a_test.dir/tests/a_test.cpp.o -MF CMakeFiles/a_test.dir/tests/a_test.cpp.o.d -o CMakeFiles/a_test.dir/tests/a_test.cpp.o -c /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/a_test.cpp
 
-CMakeFiles/a_test.dir/tests/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/a_test.dir/tests/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/test.cpp > CMakeFiles/a_test.dir/tests/test.cpp.i
+CMakeFiles/a_test.dir/tests/a_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/a_test.dir/tests/a_test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/a_test.cpp > CMakeFiles/a_test.dir/tests/a_test.cpp.i
 
-CMakeFiles/a_test.dir/tests/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/a_test.dir/tests/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/test.cpp -o CMakeFiles/a_test.dir/tests/test.cpp.s
+CMakeFiles/a_test.dir/tests/a_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/a_test.dir/tests/a_test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marsi/MarsiSomeone/tasks/rk2/Adapter/tests/a_test.cpp -o CMakeFiles/a_test.dir/tests/a_test.cpp.s
 
 # Object files for target a_test
 a_test_OBJECTS = \
-"CMakeFiles/a_test.dir/tests/test.cpp.o"
+"CMakeFiles/a_test.dir/tests/a_test.cpp.o"
 
 # External object files for target a_test
 a_test_EXTERNAL_OBJECTS =
 
-a_test: CMakeFiles/a_test.dir/tests/test.cpp.o
+a_test: CMakeFiles/a_test.dir/tests/a_test.cpp.o
 a_test: CMakeFiles/a_test.dir/build.make
 a_test: lib/libgtest_main.a
 a_test: lib/libgtest.a

@@ -3,26 +3,38 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  builds:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - run: sudo apt-get update && sudo apt-get install -y cmake build-essential
-    - run: chmod +x scripts/build_and_test.sh
-    - run: ./scripts/build_and_test.sh
-    - run: actions/upload-artifact@v4
+    
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y cmake build-essential
+    
+    - name: Make script executable
+      run: chmod +x scripts/build_and_test.sh
+    
+    - name: Run build and test script
+      run: ./scripts/build_and_test.sh
+    
+    - name: Upload deb package
+      uses: actions/upload-artifact@v4
       with:
         name: deb-package
-        path: Realease/*.deb
+        path: Release/*.deb
+
   release:
     needs: build
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/download-artifact@v4
+    - name: Download deb package
+      uses: actions/download-artifact@v4
       with:
         name: deb-package
         path: Release
-    - uses: softprops/action-gh-release@v1
+    
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
       with:
         files: Release/*.deb

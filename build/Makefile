@@ -293,29 +293,29 @@ monster_and_pet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/monster_pet.dir/build.make CMakeFiles/monster_pet.dir/monster_and_pet.cpp.s
 .PHONY : monster_and_pet.cpp.s
 
-tests/test.o: tests/test.cpp.o
-.PHONY : tests/test.o
+tests/a_test.o: tests/a_test.cpp.o
+.PHONY : tests/a_test.o
 
 # target to build an object file
-tests/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_test.dir/build.make CMakeFiles/a_test.dir/tests/test.cpp.o
-.PHONY : tests/test.cpp.o
+tests/a_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_test.dir/build.make CMakeFiles/a_test.dir/tests/a_test.cpp.o
+.PHONY : tests/a_test.cpp.o
 
-tests/test.i: tests/test.cpp.i
-.PHONY : tests/test.i
+tests/a_test.i: tests/a_test.cpp.i
+.PHONY : tests/a_test.i
 
 # target to preprocess a source file
-tests/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_test.dir/build.make CMakeFiles/a_test.dir/tests/test.cpp.i
-.PHONY : tests/test.cpp.i
+tests/a_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_test.dir/build.make CMakeFiles/a_test.dir/tests/a_test.cpp.i
+.PHONY : tests/a_test.cpp.i
 
-tests/test.s: tests/test.cpp.s
-.PHONY : tests/test.s
+tests/a_test.s: tests/a_test.cpp.s
+.PHONY : tests/a_test.s
 
 # target to generate assembly for a file
-tests/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_test.dir/build.make CMakeFiles/a_test.dir/tests/test.cpp.s
-.PHONY : tests/test.cpp.s
+tests/a_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_test.dir/build.make CMakeFiles/a_test.dir/tests/a_test.cpp.s
+.PHONY : tests/a_test.cpp.s
 
 # Help Target
 help:
@@ -341,9 +341,9 @@ help:
 	@echo "... monster_and_pet.o"
 	@echo "... monster_and_pet.i"
 	@echo "... monster_and_pet.s"
-	@echo "... tests/test.o"
-	@echo "... tests/test.i"
-	@echo "... tests/test.s"
+	@echo "... tests/a_test.o"
+	@echo "... tests/a_test.i"
+	@echo "... tests/a_test.s"
 .PHONY : help
 
 

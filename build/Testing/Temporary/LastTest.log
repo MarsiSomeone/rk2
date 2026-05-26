@@ -1,10 +1,10 @@
-Start testing: May 26 04:16 MSK
+Start testing: May 26 04:26 MSK
 ----------------------------------------------------------
 1/1 Testing: Test
 1/1 Test: Test
 Command: "/home/marsi/MarsiSomeone/tasks/rk2/Adapter/build/a_test"
 Directory: /home/marsi/MarsiSomeone/tasks/rk2/Adapter/build
-"Test" start time: May 26 04:16 MSK
+"Test" start time: May 26 04:26 MSK
 Output:
 ----------------------------------------------------------
 [==========] Running 1 test from 1 test suite.
@@ -18,11 +18,11 @@ Output:
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Test" end time: May 26 04:16 MSK
+"Test" end time: May 26 04:26 MSK
 "Test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 26 04:16 MSK
+End testing: May 26 04:26 MSK
