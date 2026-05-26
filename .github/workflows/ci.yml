@@ -1,0 +1,28 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: sudo apt-get update && sudo apt-get install -y cmake build-essential
+    - run: chmod +x scripts/build_and_test.sh
+    - run: ./scripts/build_and_test.sh
+    - run: actions/upload-artifact@v4
+      with:
+        name: deb-package
+        path: Realease/*.deb
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v4
+      with:
+        name: deb-package
+        path: Release
+    - uses: softprops/action-gh-release@v1
+      with:
+        files: Release/*.deb

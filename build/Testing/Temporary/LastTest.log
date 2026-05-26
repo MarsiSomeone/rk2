@@ -1,0 +1,28 @@
+Start testing: May 26 04:16 MSK
+----------------------------------------------------------
+1/1 Testing: Test
+1/1 Test: Test
+Command: "/home/marsi/MarsiSomeone/tasks/rk2/Adapter/build/a_test"
+Directory: /home/marsi/MarsiSomeone/tasks/rk2/Adapter/build
+"Test" start time: May 26 04:16 MSK
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AnyFunctionTest
+[ RUN      ] AnyFunctionTest.PuppyCutenessAbility
+[       OK ] AnyFunctionTest.PuppyCutenessAbility (0 ms)
+[----------] 1 test from AnyFunctionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test" end time: May 26 04:16 MSK
+"Test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 26 04:16 MSK
