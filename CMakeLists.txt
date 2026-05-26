@@ -11,7 +11,6 @@ set(PRINT_VERSION_STRING "v${PRINT_VERSION}")
 set(PROJECT_VERSION ${PRINT_VERSION})
 set(CMAKE_CXX_STANDARD 17)
 
-
 include(FetchContent)
 FetchContent_Declare(
     googletest
@@ -30,5 +29,12 @@ if(BUILD_TESTS)
     add_test(NAME Test COMMAND a_test)
 endif()
 
+set(CPACK_GENERATOR "DEB")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Someone <sirlovaolga@gmail.com>")
+set(CPACK_PACKAGE_CONTACT "sirlovaolga@gmail.com")
+set(CPACK_OUTPUT_FILE_PREFIX "${CMAKE_BINARY_DIR}/Release")
+set(CPACK_PACKAGE_VERSION ${PRINT_VERSION})
+set(CPACK_DEBIAN_PACKAGE_NAME "monster-pet-adapter")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Adapter pattern implementation for Monster to Pet")
 
-include(CPackConfig.cmake)
+include(CPack)
